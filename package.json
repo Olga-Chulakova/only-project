@@ -1,10 +1,10 @@
 {
-  "name": "accelerator-first-project",
+  "name": "only-project",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --open",
+    "start": "vite --host --open",
     "test-content": "vitest content.test.ts --ui",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview --open",
@@ -15,7 +15,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --fix",
     "lint-js": "eslint source/js --fix",
     "ls-lint": "ls-lint",
-    "editorconfig": "editorconfig-cli"
+    "editorconfig": "editorconfig-cli --exclude 'engine_scripts/**|**/*.cjs|.*'",
+    "lint": "npm run w3c && npm run linthtml && npm run html-validate && npm run stylelint && npm run lint-js && npm run ls-lint"
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",

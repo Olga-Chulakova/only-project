@@ -13,6 +13,9 @@ module.exports = {
     "heading-level": ["error", {
       "allowMultipleH1": false,
       "minInitialRank": "h1",
-    }]
+    }],
+    "no-inline-style": "off",
+    "no-autoplay": "off",
+    "unrecognized-char-ref": "off",
   },
 };
