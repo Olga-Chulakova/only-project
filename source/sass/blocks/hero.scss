@@ -1,11 +1,5 @@
-:root {
-  --icon-width: initial;
-  --icon-height: initial;
-}
-
-
 .hero__wrapper {
-  padding: 0 scaling(30px, 0.7);
+  padding: 0 scaling(30px, 0.8);
   display: flex;
   flex-direction: column;
   gap: size(213px);
@@ -99,7 +93,7 @@
   gap: 10px;
 
   @include vp-1441 {
-    gap: scaling(10px);
+    gap: size(10px);
   }
 }
 
@@ -197,43 +191,6 @@
   @include vp-767 {
     max-width: 225px;
     height: 135px;
-  }
-}
-
-// .hero__video-container.video-fullscreen {
-//   position: fixed;
-//   top: 50% !important; /* Центрируем по вертикали */
-//   left: 50% !important; /* Центрируем по горизонтали */
-//   transform: translate(-50%, -50%) !important;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   z-index: 999 !important;
-//   background: transparent;
-//   max-width: none;
-//   width: calc(100vw - size(80px));
-//   height: 90vh;
-//   border-radius: size(20px);
-//   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-@keyframes video-appear {
-  0% {
-    transform: scale(0.2);
-    opacity: 0;
-    filter: blur(4px);
-  }
-
-  70% {
-    transform: scale(1.08);
-    opacity: 1;
-    filter: blur(0);
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0);
   }
 }
 
@@ -501,5 +458,25 @@
     margin: 0 0 15px;
     width: 100%;
     grid-column: 1 / 2;
+  }
+}
+
+@keyframes video-appear {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+    filter: blur(4px);
+  }
+
+  70% {
+    transform: scale(1.08);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
   }
 }

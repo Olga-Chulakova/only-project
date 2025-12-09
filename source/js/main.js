@@ -1,5 +1,5 @@
 import {initMenu} from './modules/init-menu.js';
-import {initVideoPlayer} from './modules/cursor.js';
+import {initVideoPlayer} from './modules/video.js';
 import {scrollSlider} from './modules/project-slider.js';
 import {changeSlide} from './modules/banner.js';
 import {toggleHovered} from './modules/activating-hover-awards.js';

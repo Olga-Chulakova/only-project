@@ -11,7 +11,7 @@
 }
 
 .portfolio__wrapper {
-  padding: 0 scaling(30px, 0.5);
+  padding: 0 scaling(30px, 0.8);
 
   @include vp-1439 {
     padding: 0 scaling(30px, 5);
@@ -243,15 +243,15 @@
     transform: scale(0.98);
   }
 
-  // &:focus {
-  //   outline: size(1.5px) solid transparent;
-  //   outline-offset: size(2px);
-  // }
+  &:focus {
+    outline: size(1.5px) solid transparent;
+    outline-offset: size(2px);
+  }
 
-  // &:focus-visible {
-  //   outline: size(1.5px) solid $color-text;
-  //   outline-offset: size(2px);
-  // }
+  &:focus-visible {
+    outline: size(1.5px) solid $color-text;
+    outline-offset: size(2px);
+  }
 }
 
 .portfolio__card-img {

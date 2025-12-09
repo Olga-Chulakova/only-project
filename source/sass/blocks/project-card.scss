@@ -62,7 +62,7 @@
   justify-content: space-between;
   width: size(330px);
   height: size(320px);
-  padding: scaling(30px) scaling(29px) scaling(30px) scaling(30px);
+  padding: size(30px) size(29px) size(30px) size(30px);
   border-radius: size(30px);
   text-decoration: none;
   color: inherit;
@@ -94,45 +94,32 @@
   }
 
   &--sibur {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 86%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), #12a39f;
-    background-position: bottom, center, center;
-    background-size: 100% size(389px), 100% 100%, 100% 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 86%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), linear-gradient(180deg, #12a39f 0%, rgba(18, 163, 159, 0.8) 76%, rgba(255, 255, 255, 0.4) 86%, #ffffff 90%, #ffffff 100%);
+    background-position: center, center, 0 0;
+    background-size: 100% 100%, 100% 100%, 100% 100%;
     background-repeat: no-repeat;
   }
 
-  // &--sibur-1 {
-  //   background:
-  //     linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 86%),
-  //     radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%),
-  //     radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%),
-  //     linear-gradient(
-  //       180deg,
-  //       #12a39f 0%,
-  //       rgba(18, 163, 159, 0.8) 40%,
-  //       rgba(255, 255, 255, 0.4) 70%,
-  //       #ffffff 90%,
-  //       #ffffff 100%);
-  //   background-position: center, center, 0 0;
-  //   background-size: 100% 100%, 100% 100%, 100% 100%;
-  //   background-repeat: no-repeat;
-  // }
-
   &--mr-group {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 83%), radial-gradient(74.39% 47.29% at 16.41% 32%, rgba(255, 255, 255, 0.06) 199%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(99deg, #754be9 0%, #754be9 -3%, rgba(0, 0, 0, 0.5) 44.7%, #754be9 45%, #422a83 100%), linear-gradient(263.14deg, #754be9 25.68%, #422a83 108.59%);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 83%),
+      radial-gradient(74.39% 47.29% at 16.41% 32%, rgba(255, 255, 255, 0.06) 199%, rgba(0, 0, 0, 0.2) 100%),
+      linear-gradient(99deg, #754be9 0%, #754be9 -3%, rgba(0, 0, 0, 0.5) 44.7%, #754be9 45%, #422a83 100%),
+      linear-gradient(180deg, #754be9 0%, rgba(117, 75, 233, 0.8) 76%, rgba(255, 255, 255, 0.4) 86%, #ffffff 90%, #ffffff 100%);
     background-position: bottom, center, center, center;
     background-size: 100% size(296px), 100% 100%, 100% 100%, 100% 100%;
     background-repeat: no-repeat;
   }
 
   &--glavstroy {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 86%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), radial-gradient(52.39% 47.29% at 30.41% 104%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), #1968b0;
-    background-position: bottom, center, center;
-    background-size: 100% size(296px), 100% 100%, 100% 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 86%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), radial-gradient(52.39% 47.29% at 30.41% 104%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), linear-gradient(180deg, #1968b0 0%, rgba(25, 104, 176, 0.8) 76%, rgba(255, 255, 255, 0.4) 86%, #ffffff 90%, #ffffff 100%);
+    background-position: bottom, center, center, center;
+    background-size: 100% size(296px), 100% 100%, 100% 100%, 100% 100%;
     background-repeat: no-repeat;
   }
 
   &--pharm {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 77%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), #006648;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 77%), radial-gradient(52.39% 46.29% at 41.41% 30%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 49, 60, 0.2) 100%), linear-gradient(180deg, #006648 0%, rgba(0, 102, 72, 0.8) 76%, rgba(255, 255, 255, 0.4) 86%, #ffffff 90%, #ffffff 100%);
     background-position: bottom, center, center;
     background-size: 100% size(227px), 100% 100%, 100% 100%;
     background-repeat: no-repeat;
@@ -144,6 +131,7 @@
     background-size: 100% size(221px), 100% 100%, 100% 100%;
     background-repeat: no-repeat;
   }
+
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {

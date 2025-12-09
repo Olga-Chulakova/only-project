@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: size(32px);
+  gap: size(33px);
 
   @include vp-1279 {
     flex-direction: column;
