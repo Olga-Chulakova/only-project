@@ -1,0 +1,17 @@
+$vp-base: 1440px;
+
+@function scaling($size-in-px, $factor: 0) {
+  @if $factor == 0 {
+    @return calc($size-in-px / $vp-base * 100vw);
+  }
+
+  @return calc(#{$size-in-px} + (100vw - #{$vp-base}) * #{$factor} / 100);
+}
+
+@function size($size-in-px) {
+  @return calc($size-in-px / $fz-default * 1rem);
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}

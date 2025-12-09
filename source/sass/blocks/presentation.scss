@@ -1,0 +1,62 @@
+.presentation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: size(12px);
+
+  @include vp-1441 {
+    gap: size(12px);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.presentation__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: size(5px);
+}
+
+.presentation__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: size(14px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.42px;
+  padding: size(16px) size(15px);
+  border-radius: size(15px);
+  background-color: $color-default-white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: none;
+
+  @include vp-1279 {
+    font-size: 13px;
+    letter-spacing: -0.39px;
+    padding: 15px 14px;
+    border-radius: 12px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: $color-highlight;
+      transform: scale(1.03);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: size(1.5px) solid transparent;
+  }
+
+  &:focus-visible {
+    outline: size(1.5px) solid $color-text;
+  }
+}

@@ -1,31 +1,1160 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Компания Only - лидер в создании сайтов для B2B">
+  <title>Проекты Only: успешные решения в дизайне и разработке сайтов</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/tt-commons-pro-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/tt-commons-pro-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/tt-runs-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/tt-runs-demi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/tt-runs-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page-body">
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <img src="img/logo/logo-only.svg" width="73" height="24" alt="Логотип сайта - Only">
+      </div>
+      <div class="header__nav-wrapper">
+        <nav class="header__nav nav-menu">
+          <ul class="nav-menu__list list-reset">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#">Проекты</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#">Компания</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#">Направления</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#">Контакты</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#">Блог</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link link" href="#">Карьера</a>
+            </li>
+          </ul>
+          <a class="nav-menu__link nav-menu__favorit-link link" href="#" aria-label="Добавить в избранное">
+            <span class="nav-menu__favorit-count" data-count="40">40</span>
+            <span class="nav-menu__favorit-icon">
+              <svg width="20" height="20" aria-hidden="true">
+                <use href="/__spritemap#sprite-favorit-icon"></use>
+              </svg>
+            </span>
+          </a>
+        </nav>
+        <div class="header__contact-info">
+          <div class="header__social social">
+            <ul class="social__list list-reset">
+              <li class="social__item">
+                <a class="social__link link" href="#" aria-label="Наша страница в Behance">be</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link link" href="#" aria-label="Наша страница в Dprofile">dp</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link link" href="#" aria-label="Наша страница в Telegram">tg</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link link" href="#" aria-label="Наша страница в Вконтакте">vk</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__contacts contacts">
+            <div class="contacts__links">
+              <ul class="contacts__links-list list-reset">
+                <li class="contacts__link-item">
+                  <a class="contacts__link contacts__link--mail link" href="mailto:hello@only.digital?subject=Вопрос&body=Здравствуйте!">hello@only.digital</a>
+                </li>
+                <li class="contacts__link-item">
+                  <a class="contacts__link contacts__link--tel link" href="tel:+7(495)7409979">+7 (495) 740 99 79</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__telegram">
+              <p class="contacts__title-social text-pointing">Telegram для связи</p>
+              <a class="contacts__link contacts__link-tg link" href="https://t.me/onlydigitalagency">@onlydigitalagency</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="header__btn-menu" type="button">
+        <span class="header__btn-lines"></span>
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__wrapper">
+        <div class="hero__wrapper-top">
+          <h1 class="hero__title title">Creative digital<br>production</h1>
+          <div class="hero__awards-wrapper">
+            <ul class="hero__awards-list list-reset">
+              <li class="hero__awards-item">
+                <a class="hero__awards-link link" href="#">
+                  <p>25</p>
+                  <span class="hero__awards-icon">
+                    <img src="img/logo/logo-awards.svg" width="26" height="26" alt="Логотип сайта - Awwwards" style="--icon-width: 26; --icon-height: 26;">
+                  </span>
+                </a>
+              </li>
+              <li class="hero__awards-item">
+                <a class="hero__awards-link link" href="#">
+                  <p>1</p>
+                  <span class="hero__awards-icon">
+                    <img src="img/logo/logo-fwa.svg" width="37" height="11" alt="Логотип компании - FWA" style="--icon-width: 37; --icon-height: 11;">
+                  </span>
+                </a>
+              </li>
+              <li class="hero__awards-item">
+                <a class="hero__awards-link link" href="#">
+                  <p>26</p>
+                  <span class="hero__awards-icon">
+                    <img src="img/logo/logo-ssda.svg" width="23" height="23" alt="Логотип премии - CSSDA" style="--icon-width: 23; --icon-height: 23;">
+                  </span>
+                </a>
+              </li>
+              <li class="hero__awards-item">
+                <a class="hero__awards-link link" href="#">
+                  <p>22</p>
+                  <span class="hero__awards-icon">
+                    <img src="img/logo/logo-runet.svg" width="20" height="26" alt="Логотип рейтинга Рунета" style="--icon-width: 20; --icon-height: 26;">
+                  </span>
+                </a>
+              </li>
+              <li class="hero__awards-item">
+                <a class="hero__awards-link link" href="#">
+                  <p>40</p>
+                  <span class="hero__awards-icon">
+                    <img src="img/logo/logo-gold-site.svg" width="25" height="29" alt="Логотип конкурса - Золотой сайт" style="--icon-width: 25; --icon-height: 29;">
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__video-wrapper">
+            <div class="hero__video-container">
+              <video class="hero__video" loop muted autoplay playsinline="playsinline">
+                <source src="video/promo.webm" type="video/webm">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="hero__wrapper-bottom">
+          <div class="hero__wrapper-contacts">
+            <div class="hero__progress">
+              <span class="hero__number">10</span>
+              <span class="hero__place">лет</span>
+              <p class="hero__creative-dev text-pointing">лучший креативный<br>разработчик для b2b</p>
+            </div>
+            <div class="hero__contacts contacts">
+              <div class="contacts__links">
+                <ul class="contacts__links-list list-reset">
+                  <li class="contacts__link-item">
+                    <a class="contacts__link contacts__link--mail link" href="mailto:hello@only.digital?subject=Вопрос&body=Здравствуйте!">hello@only.digital</a>
+                  </li>
+                  <li class="contacts__link-item">
+                    <a class="contacts__link contacts__link--tel link" href="tel:+7(495)7409979">+7 (495) 740 99 79</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__telegram">
+                <p class="contacts__title-social text-pointing">Telegram для связи</p>
+                <a class="contacts__link-tg link" href="https://t.me/onlydigitalagency">@onlydigitalagency</a>
+                <span class="contacts__icon-tg">
+                  <svg width="14" height="14" aria-hidden="true">
+                    <use href="/__spritemap#sprite-telegram"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__wrapper-digital">
+            <p class="hero__intro-text">Only.digital — агентство с фокусом на сильную аналитику, дизайн и разработку. В основе наших проектов лежат идеи, создаваемые на стыке стратегии, креатива и технологий.</p>
+            <div class="hero__documents presentation">
+              <ul class="presentation__list list-reset">
+                <li class="presentation__item">
+                  <a class="presentation__link presentation__link--pdf link" href="#">pdf</a>
+                </li>
+                <li class="presentation__item">
+                  <a class="presentation__link presentation__link--pitch link" href="#">pitch</a>
+                </li>
+              </ul>
+              <p class="presentation__text text-pointing">Презентация<br>компании</p>
+            </div>
+            <button class="hero__start-project button-link" type="button">Начать проект</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__video-cursor"></div>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__wrapper">
+        <div class="portfolio__heading">
+          <h2 class="portfolio__title title-h2">Проекты</h2>
+          <div class="portfolio__text-wrapper">
+            <h3 class="portfolio__subtitle title">Аналитика, брендинг <br>и разработка для B2B</h3>
+            <p>Only — digital–агентство с фокусом на сильную аналитику, дизайн и разработку. В основе наших проектов лежат идеи, создаваемые на стыке стратегии, креатива и технологий.</p>
+            <p>Обеспечиваем компании лучшими техническими и&nbsp;дизайн-решениями, создавая digital-проекты.</p>
+          </div>
+        </div>
+        <div class="portfolio__project-cards">
+          <div class="portfolio__cards">
+            <div class="portfolio__cards-wrapper">
+              <h3 class="portfolio__card-title title">Крупнейшие компании</h3>
+              <div class="portfolio__card-group">
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="img/portfolio/sibur-mobile@1x.webp 1x, img/portfolio/sibur-mobile@2x.webp 2x" type="image/webp" width="315" height="315">
+                      <source media="(max-width: 1279px)" srcset="img/portfolio/sibur-tablet@1x.webp 1x, img/portfolio/sibur-tablet@2x.webp 2x" type="image/webp" width="357" height="349">
+                      <source srcset="img/portfolio/sibur@1x.webp 1x, img/portfolio/sibur@2x.webp 2x" type="image/webp" width="447" height="450">
+                      <source media="(max-width: 767px)" srcset="img/portfolio/sibur-mobile@1x.jpg 1x, img/portfolio/sibur-mobile@2x.jpg 2x" type="image/jpg" width="315" height="315">
+                      <source media="(max-width: 1279px)" srcset="img/portfolio/sibur-tablet@1x.jpg 1x, img/portfolio/sibur-tablet@2x.jpg 2x" type="image/jpg" width="357" height="349">
+                      <img src="img/portfolio/sibur@1x.jpg" srcset="img/portfolio/sibur@2x.jpg 2x" width="447" height="450" alt="Пример проекта Сибур">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>Сибур</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/mr-group@1x.webp 1x, img/portfolio/mr-group@2x.webp 2x" type="image/webp" width="446" height="450">
+                      <img src="img/portfolio/mr-group@1x.jpg" srcset="img/portfolio/mr-group@2x.jpg 2x" width="446" height="450" alt="Пример проекта MR Group">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>MR group</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/severstal@1x.webp 1x, img/portfolio/severstal@2x.webp 2x" type="image/webp" width="447" height="450">
+                      <img src="img/portfolio/severstal@1x.jpg" srcset="img/portfolio/severstal@2x.jpg 2x" width="447" height="450" alt="Пример проекта Северсталь">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>Северсталь</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__cards-wrapper">
+              <h3 class="portfolio__card-title title">Девелоперы</h3>
+              <div class="portfolio__card-group">
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/whoosh@1x.webp 1x, img/portfolio/whoosh@2x.webp 2x" type="image/webp" width="447" height="450">
+                      <img src="img/portfolio/whoosh@1x.jpg" srcset="img/portfolio/whoosh@2x.jpg 2x" width="447" height="450" alt="Пример проекта WHOOSH">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>WHOOSH</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/r&g@1x.webp 1x, img/portfolio/r&g@2x.webp 2x" type="image/webp" width="446" height="450">
+                      <img src="img/portfolio/r&g@1x.jpg" srcset="img/portfolio/r&g@2x.jpg 2x" width="446" height="450" alt="Пример проекта сайта R&G-центра НЛМК">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>Сайт R&D-центра НЛМК</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/new-academik@1x.webp 1x, img/portfolio/new-academik@2x.webp 2x" type="image/webp" width="447" height="450">
+                      <img src="img/portfolio/new-academik@1x.jpg" srcset="img/portfolio/new-academik@2x.jpg 2x" width="447" height="450" alt="Пример проекта Новые Академики">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>Новые академики</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__cards-wrapper">
+              <h3 class="portfolio__card-title title">B2C</h3>
+              <div class="portfolio__card-group">
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/water@1x.webp 1x, img/portfolio/water@2x.webp 2x" type="image/webp" width="447" height="450">
+                      <img src="img/portfolio/water@1x.jpg" srcset="img/portfolio/water@2x.jpg 2x" width="447" height="450" alt="Пример проекта Аш-Тау">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>Аш-Тау</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/uralchem@1x.webp 1x, img/portfolio/uralchem@2x.webp 2x" type="image/webp" width="446" height="450">
+                      <img src="img/portfolio/uralchem@1x.jpg" srcset="img/portfolio/uralchem@2x.jpg 2x" width="446" height="450" alt="Пример проекта Уралхим">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>Уралхим</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+                <a class="portfolio__card-link link" href="#">
+                  <div class="portfolio__card-img">
+                    <picture>
+                      <source srcset="img/portfolio/pay@1x.webp 1x, img/portfolio/pay@2x.webp 2x" type="image/webp" width="447" height="450">
+                      <img src="img/portfolio/pay@1x.jpg" srcset="img/portfolio/pay@2x.jpg 2x" width="447" height="450" alt="Пример проекта Плати частями">
+                    </picture>
+                  </div>
+                  <div class="portfolio__cards-content">
+                    <h4>Плати частями</h4>
+                    <p>3D, Анимация, Production, Web-design</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a class="portfolio__link-projects button-link" href="#">все проекты</a>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="clients__general-wrapper">
+        <h2 class="visually-hidden">Клиенты</h2>
+        <h3 class="clients__subtitle title">20 клиентов — крупнейшие компании из списка Forbes. Более 100 реализованных проектов</h3>
+        <div class="clients__logo-wrapper">
+          <ul class="clients__logo-list list-reset">
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/severstal.svg" width="162" height="52" style="--img-w: 162; --img-h: 52;" alt="Логотип компании-клиента - Северсталь">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/sibur.svg" width="123" height="24" style="--img-w: 123; --img-h: 24;" alt="Логотип компании-клиента - Сибур">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/uralchem.svg" width="185" height="23" style="--img-w: 185; --img-h: 23;" alt="Логотип компании-клиента - Уралхим">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/ros-tech.svg" width="149" height="46" style="--img-w: 149; --img-h: 46;" alt="Логотип компании-клиента - Ростех">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/nlmk.svg" width="108" height="60" style="--img-w: 108; --img-h: 60;" alt="Логотип компании-клиента - НЛМК">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/rosatom.svg" width="125" height="56" style="--img-w: 125; --img-h: 56;" alt="Логотип компании-клиента - Росатом">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/tek-torg.svg" width="157" height="37" style="--img-w: 157; --img-h: 37;" alt="Логотип компании-клиента - ТЭК-Торг">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/pharmstandard.svg" width="160" height="37" style="--img-w: 160; --img-h: 37;" alt="Логотип компании-клиента - Фармстандарт">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/schlumberger.svg" width="154" height="35" style="--img-w: 154; --img-h: 35;" alt="Логотип компании-клиента - Schlumberger">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/sber.svg" width="134" height="37" style="--img-w: 134; --img-h: 37;" alt="Логотип компании-клиента - Сбер">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/vk.svg" width="63" height="63" style="--img-w: 63; --img-h: 63;" alt="Логотип компании-клиента - Вконтакте">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/otkritie.svg" width="184" height="36" style="--img-w: 184; --img-h: 36;" alt="Логотип компании-клиента - Открытие">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/mr-group.svg" width="146" height="32" style="--img-w: 146; --img-h: 32;" alt="Логотип компании-клиента - MR-group">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/coldy.svg" width="121" height="20" style="--img-w: 121; --img-h: 20;" alt="Логотип компании-клиента - Coldy">
+                </span>
+              </a>
+            </li>
+            <li class="clients__logo-item">
+              <a class="clients__logo-link" href="#">
+                <span class="clients__logo">
+                  <img src="img/logo/glavstroy.svg" width="194" height="24" style="--img-w: 194; --img-h: 24;" alt="Логотип компании-клиента - Главстрой">
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__general-wrapper">
+        <div class="projects__heading-wrapper">
+          <h2 class="projects__title title-h2">крупные проекты</h2>
+          <div class="projects__controll-wrapper">
+            <h3 class="projects__subtitle title">Поддерживаем&nbsp;и развиваем долгосрочное сотрудничество</h3>
+            <div class="projects__buttons">
+              <button class="projects__slider-button projects__slider-button--prev" type="button">
+                <span class="visually-hidden">Назад</span>
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="/__spritemap#sprite-btn-arrow"></use>
+                </svg>
+              </button>
+              <button class="projects__slider-button projects__slider-button--next" type="button">
+                <span class="visually-hidden">Вперед</span>
+                <svg width="20" height="20" aria-hidden="true">
+                  <use href="/__spritemap#sprite-btn-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card-wrapper project-card">
+          <ul class="project-card__list list-reset">
+            <li class="project-card__item">
+              <a class="project-card__link project-card__link--severstal" href="#" aria-label="Проекты для компании Северсталь">
+                <div class="project-card__image-wrapper">
+                  <ul class="project-card__img-list list-reset">
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/severstal-img-1@1x.webp 1x, img/projects/severstal-img-1@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/severstal-img-1@1x.jpg" srcset="img/projects/severstal-img-1@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Северстали">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/severstal-img-2@1x.webp 1x, img/projects/severstal-img-2@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/severstal-img-2@1x.jpg" srcset="img/projects/severstal-img-2@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Северстали">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/severstal-img-3@1x.webp 1x, img/projects/severstal-img-3@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/severstal-img-3@1x.jpg" srcset="img/projects/severstal-img-3@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Северстали">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/severstal-img-4@1x.webp 1x, img/projects/severstal-img-4@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/severstal-img-4@1x.jpg" srcset="img/projects/severstal-img-4@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Северстали">
+                        </picture>
+                        <span>+6</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-card__text-wrapper">
+                  <span>Промышленность</span>
+                  <h4>Северсталь</h4>
+                  <p>Адаптация нового брендинга для digital</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card__item">
+              <a class="project-card__link project-card__link--sibur" href="#" aria-label="Проекты для компании Сибур">
+                <div class="project-card__image-wrapper">
+                  <ul class="project-card__img-list list-reset">
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/sibur-img-1@1x.webp 1x, img/projects/sibur-img-1@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/sibur-img-1@1x.jpg" srcset="img/projects/sibur-img-1@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Сибур">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/sibur-img-2@1x.webp 1x, img/projects/sibur-img-2@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/sibur-img-2@1x.jpg" srcset="img/projects/sibur-img-2@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Сибур">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/sibur-img-3@1x.webp 1x, img/projects/sibur-img-3@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/sibur-img-3@1x.jpg" srcset="img/projects/sibur-img-3@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Сибур">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/sibur-img-4@1x.webp 1x, img/projects/sibur-img-4@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/sibur-img-4@1x.jpg" srcset="img/projects/sibur-img-4@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Сибур">
+                        </picture>
+                        <span>+6</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-card__text-wrapper">
+                  <span>Промышленность</span>
+                  <h4>Сибур</h4>
+                  <p>Адаптация нового брендинга для digital</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card__item">
+              <a class="project-card__link project-card__link--mr-group" href="#" aria-label="Проекты для компании MR-group">
+                <div class="project-card__image-wrapper">
+                  <ul class="project-card__img-list list-reset">
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/mr-img-1@1x.webp 1x, img/projects/mr-img-1@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/mr-img-1@1x.jpg" srcset="img/projects/mr-img-1@2x.jpg 2x" width="64" height="64" alt="Пример проекта для MR-group">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/mr-img-2@1x.webp 1x, img/projects/mr-img-2@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/mr-img-2@1x.jpg" srcset="img/projects/mr-img-2@2x.jpg 2x" width="64" height="64" alt="Пример проекта для MR-group">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/mr-img-3@1x.webp 1x, img/projects/mr-img-3@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/mr-img-3@1x.jpg" srcset="img/projects/mr-img-3@2x.jpg 2x" width="64" height="64" alt="Пример проекта для MR-group">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/mr-img-4@1x.webp 1x, img/projects/mr-img-4@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/mr-img-4@1x.jpg" srcset="img/projects/mr-img-4@2x.jpg 2x" width="64" height="64" alt="Пример проекта для MR-group">
+                        </picture>
+                        <span>+2</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-card__text-wrapper">
+                  <span>Недвижимость</span>
+                  <h4>MR Group</h4>
+                  <p>Адаптация нового брендинга для digital</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card__item">
+              <a class="project-card__link project-card__link--glavstroy" href="#" aria-label="Проекты для компании Главстрой">
+                <div class="project-card__image-wrapper">
+                  <ul class="project-card__img-list list-reset">
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/glavstroy-img-1@1x.webp 1x, img/projects/glavstroy-img-1@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/glavstroy-img-1@1x.jpg" srcset="img/projects/glavstroy-img-1@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Главстрой">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/glavstroy-img-2@1x.webp 1x, img/projects/glavstroy-img-2@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/glavstroy-img-2@1x.jpg" srcset="img/projects/glavstroy-img-2@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Главстрой">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/glavstroy-img-3@1x.webp 1x, img/projects/glavstroy-img-3@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/glavstroy-img-3@1x.jpg" srcset="img/projects/glavstroy-img-3@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Главстрой">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/glavstroy-img-4@1x.webp 1x, img/projects/glavstroy-img-4@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/glavstroy-img-4@1x.jpg" srcset="img/projects/glavstroy-img-4@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Главстрой">
+                        </picture>
+                        <span>+1</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-card__text-wrapper">
+                  <span>Недвижимость</span>
+                  <h4>Главстрой</h4>
+                  <p>Адаптация нового брендинга для digital</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card__item">
+              <a class="project-card__link project-card__link--pharm" href="#" aria-label="Проекты для компании Фармстандарт">
+                <div class="project-card__image-wrapper">
+                  <ul class="project-card__img-list list-reset">
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/pharm-img-1@1x.webp 1x, img/projects/pharm-img-1@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/pharm-img-1@1x.jpg" srcset="img/projects/pharm-img-1@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Фармстандарт">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/pharm-img-2@1x.webp 1x, img/projects/pharm-img-2@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/pharm-img-2@1x.jpg" srcset="img/projects/pharm-img-2@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Фармстандарт">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/pharm-img-3@1x.webp 1x, img/projects/pharm-img-3@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/pharm-img-3@1x.jpg" srcset="img/projects/pharm-img-3@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Фармстандарт">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/pharm-img-4@1x.webp 1x, img/projects/pharm-img-4@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/pharm-img-4@1x.jpg" srcset="img/projects/pharm-img-4@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Фармстандарт">
+                        </picture>
+                        <span>+1</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-card__text-wrapper">
+                  <span>Медицина</span>
+                  <h4>Фармстандарт</h4>
+                  <p>Адаптация нового брендинга для digital</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-card__item">
+              <a class="project-card__link project-card__link--tek-torg" href="#" aria-label="Проекты для компании Тэк-торг">
+                <div class="project-card__image-wrapper">
+                  <ul class="project-card__img-list list-reset">
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/tek-img-1@1x.webp 1x, img/projects/tek-img-1@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/tek-img-1@1x.jpg" srcset="img/projects/tek-img-1@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Тэк-торг">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/tek-img-2@1x.webp 1x, img/projects/tek-img-2@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/tek-img-2@1x.jpg" srcset="img/projects/tek-img-2@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Тэк-торг">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/tek-img-3@1x.webp 1x, img/projects/tek-img-3@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/tek-img-3@1x.jpg" srcset="img/projects/tek-img-3@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Тэк-торг">
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="project-card__img-item">
+                      <div class="project-card__img">
+                        <picture>
+                          <source srcset="img/projects/tek-img-4@1x.webp 1x, img/projects/tek-img-4@2x.webp  2x" type="image/webp" width="64" height="64">
+                          <img src="img/projects/tek-img-4@1x.jpg" srcset="img/projects/tek-img-4@2x.jpg 2x" width="64" height="64" alt="Пример проекта для Тэк-торг">
+                        </picture>
+                        <span>+4</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-card__text-wrapper">
+                  <span>Промышленность</span>
+                  <h4>Тэк-Торг</h4>
+                  <p>Адаптация нового брендинга для digital</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="banner" data-animate="banner">
+      <div class="banner__wrapper">
+        <div class="banner__slide-wrapper">
+          <div class="banner__slide banner__slide--realty is-active">
+            <div class="banner__text-wrapper">
+              <h2>недвижимость</h2>
+              <div class="banner__text-mission">
+                <div class="banner__line">
+                  <p>Формируем</p>
+                  <span class="banner__icon">
+                    <svg width="40" height="31" aria-hidden="true">
+                      <use href="/__spritemap#sprite-arrow"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="banner__line">
+                  <span class="banner__img">
+                    <picture>
+                      <source srcset="img/banner/heart@1x.webp 1x, img/banner/heart@2x.webp  2x" type="image/webp" width="40" height="40">
+                      <img src="img/banner/heart@1x.png" srcset="img/banner/heart@2x.png 2x" width="40" height="40" alt="иконка - сердце">
+                    </picture>
+                  </span>
+                  <p>ценность бренда</p>
+                  <span class="banner__img">
+                    <picture>
+                      <source srcset="img/banner/building@1x.webp 1x, img/banner/building@2x.webp 2x" type="image/webp" width="40" height="40">
+                      <img src="img/banner/building@1x.png" srcset="img/banner/building@2x.png 2x" width="40" height="40" alt="иконка - здание">
+                    </picture>
+                  </span>
+                  <p>ЖК</p>
+                </div>
+                <div class="banner__line banner__line--highlight">
+                  <div class="banner__highlight-img">
+                    <span class="banner__icon">
+                      <svg width="28" height="28" aria-hidden="true">
+                        <use href="/__spritemap#sprite-network"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <p>в digital - среде</p>
+                </div>
+              </div>
+              <div class="banner__intro-content">
+                <p>Создаем digital-пространство для девелоперов и проектов ЖК, находя&nbsp;баланс&nbsp;идентичности бренда&nbsp;и&nbsp;сервисности.</p>
+                <a class="button-link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="banner__image-wrapper">
+              <div class="banner__image banner__image-1">
+                <picture>
+                  <source srcset="img/banner/veer-project@1x.webp 1x, img/banner/veer-project@1x.webp 2x" type="image/webp" width="353" height="268">
+                  <img src="img/banner/veer-project@1x.png" srcset="img/banner/veer-project@2x.png 2x" width="353" height="268" alt="Пример проекта ЖК VEER">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-2">
+                <picture>
+                  <source srcset="img/banner/jois-project@1x.webp 1x, img/banner/jois-project@2x.webp 2x" type="image/webp" width="248" height="480">
+                  <img src="img/banner/jois-project@1x.png" srcset="img/banner/jois-project@2x.png 2x" width="248" height="480" alt="Пример проекта ЖК JOIS">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-3">
+                <picture>
+                  <source media="(max-width: 1279px)" srcset="img/banner/1864-project-tablet@1x.webp 1x, img/1864-project-tablet@2x.webp 2x" type="image/webp" width="179" height="179">
+                  <source srcset="img/banner/1864-project@1x.webp 1x, img/banner/1864-project@2x.webp 2x" type="image/webp" width="345" height="345">
+                  <source media="(max-width: 1279px)" srcset="img/banner/1864-project-tablet@1x.png 1x, img/1864-project-tablet@2x.png 2x" type="image/png" width="179" height="179">
+                  <img src="img/banner/1864-project@1x.png" srcset="img/banner/1864-project@2x.png 2x" width="345" height="345" alt="Пример проекта резиденции 1864">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-4">
+                <picture>
+                  <source srcset="img/banner/new-academik@1x.webp 1x, img/banner/new-academik@2x.webp 2x" type="image/webp" width="374" height="296">
+                  <img src="img/banner/new-academik@1x.png" srcset="img/banner/new-academik@2x.png 2x" width="374" height="296" alt="Пример проекта резиденции 1864">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="banner__slide banner__slide--mobile-app">
+            <div class="banner__text-wrapper">
+              <h2>Mobile App</h2>
+              <div class="banner__text-mission">
+                <div class="banner__line">
+                  <p>Проектируем</p>
+                </div>
+                <div class="banner__line banner__line--highlight">
+                  <div class="banner__highlight-img">
+                    <span class="banner__icon">
+                      <svg width="22" height="27" aria-hidden="true">
+                        <use href="/__spritemap#sprite-phone"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <p>мобильные</p>
+                </div>
+                <div class="banner__line">
+                  <p>приложения</p>
+                </div>
+              </div>
+              <div class="banner__intro-content">
+                <p>Разрабатываем приложения для мобильных устройств, решая&nbsp;реальные&nbsp;запросы пользователей.</p>
+                <a class="button-link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="banner__image-wrapper">
+              <div class="banner__image banner__image-1">
+                <picture>
+                  <source srcset="img/banner/mobile-app@1x.webp 1x, img/banner/mobile-app@2x.webp 2x" type="image/webp" width="230" height="480">
+                  <img src="img/banner/mobile-app@1x.png" srcset="img/banner/mobile-app@2x.png 2x" width="230" height="480" alt="Пример проекта приложения Stool">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-2">
+                <picture>
+                  <source srcset="img/banner/catalog-chair@1x.webp 1x, img/banner/catalog-chair@2x.webp 2x" type="image/webp" width="230" height="480">
+                  <img src="img/banner/catalog-chair@1x.png" srcset="img/banner/catalog-chair@2x.png 2x" width="230" height="480" alt="Пример проекта приложения каталога Stool">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-3">
+                <picture>
+                  <source srcset="img/banner/chair-libra@1x.webp 1x, img/banner/chair-libra@2x.webp 2x" type="image/webp" width="264" height="154">
+                  <img src="img/banner/chair-libra@1x.png" srcset="img/banner/chair-libra@2x.png 2x" width="264" height="154" alt="Пример проекта карточки товара стула Libra приложения Stool">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-4">
+                <picture>
+                  <source srcset="img/banner/catalog-menu@1x.webp 1x, img/banner/catalog-menu@2x.webp 2x" type="image/webp" width="90" height="90">
+                  <img src="img/banner/catalog-menu@1x.png" srcset="img/banner/catalog-menu@2x.png 2x" width="90" height="90" alt="Меню каталога мобильного приложения">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-5">
+                <picture>
+                  <source srcset="img/banner/banquet-chair@1x.webp 1x, img/banner/banquet-chair@2x.webp 2x" type="image/webp" width="264" height="105">
+                  <img src="img/banner/banquet-chair@1x.png" srcset="img/banner/banquet-chair@2x.png 2x" width="264" height="105" alt="Меню каталога мобильного приложения - банкетная мебель">
+                </picture>
+              </div>
+              <div class="banner__image banner__image-6">
+                <picture>
+                  <source srcset="img/banner/order@1x.webp 1x, img/banner/order@2x.webp 2x" type="image/webp" width="134" height="60">
+                  <img src="img/banner/order@1x.png" srcset="img/banner/order@2x.png 2x" width="134" height="60" alt="Кнопка оформить заказ мобильного приложения">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="banner__bullet-wrapper">
+            <button class="banner__bullet is-active" type="button">
+              <span class="visually-hidden">Перейти на слайд 1</span>
+            </button>
+            <button class="banner__bullet" type="button">
+              <span class="visually-hidden">Перейти на слайд 2</span>
+            </button>
+            <button class="banner__bullet" type="button">
+              <span class="visually-hidden">Перейти на слайд 3</span>
+            </button>
+            <button class="banner__bullet" type="button">
+              <span class="visually-hidden">Перейти на слайд 4</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="awards">
+      <div class="awards__general-wrapper">
+        <div class="awards__heading">
+          <h2 class="awards__title title-h2">награды</h2>
+          <div class="awards__text-wrapper">
+            <h3 class="awards__subtitle title">За 10 лет активной работы мы&nbsp;завоевали более <br>150 призовых&nbsp;мест</h3>
+            <p>Каждый год подтверждаем высокие позиции в Рейтинге Рунета в сегменте крупного B2B-бизнеса. Побеждаем на международных и российских конкурсах в номинациях digital-дизайна и разработки сайтов.</p>
+          </div>
+        </div>
+        <div class="awards__progress-content">
+          <div class="awards__organizer">
+            <ul class="awards__organizer-list list-reset">
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name">
+                    <span class="awards__logo-icon">
+                      <img src="img/logo/logo-awards.svg" width="40" height="40" alt="номинация - Awwwards" style="--icon-width: 40; --icon-height: 40;">
+                    </span>
+                    <p>AWWWARDS</p>
+                  </div>
+                  <span>25</span>
+                </a>
+              </li>
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name">
+                    <span class="awards__logo-icon">
+                      <img src="img/logo/logo-ssda.svg" width="38" height="38" alt="номинация - СSSDA" style="--icon-width: 38; --icon-height: 38;">
+                    </span>
+                    <p>СSSDA</p>
+                  </div>
+                  <span>28</span>
+                </a>
+              </li>
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name">
+                    <span class="awards__logo-icon">
+                      <img src="img/logo/logo-mixxrussia.svg" width="56" height="17" alt="номинация - Mixxrussia" style="--icon-width: 56; --icon-height: 17;">
+                    </span>
+                    <p>Mixxrussia</p>
+                  </div>
+                  <span>5</span>
+                </a>
+              </li>
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name awards__organizer-name--excreted">
+                    <p>G8</p>
+                    <span class="awards__logo-icon awards__logo-icon--active">
+                      <img src="img/logo/logo-g8.svg" width="55" height="35" alt="номинация - G8 Awards" style="--icon-width: 55; --icon-height: 35;">
+                    </span>
+                    <p>Awards</p>
+                  </div>
+                  <span>6</span>
+                </a>
+              </li>
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name">
+                    <span class="awards__logo-icon">
+                      <img src="img/logo/logo-invironment.svg" width="33" height="33" alt="номинация - Среда" style="--icon-width: 33; --icon-height: 33;">
+                    </span>
+                    <p>Среда</p>
+                  </div>
+                  <span>5</span>
+                </a>
+              </li>
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name">
+                    <p>Рейтинг</p>
+                    <span class="awards__logo-icon">
+                      <img src="img/logo/logo-runet.svg" width="28" height="36" alt="номинация - Рейтинг Рунета" style="--icon-width: 28; --icon-height: 36;">
+                    </span>
+                    <p>Рунета</p>
+                  </div>
+                  <span>22</span>
+                </a>
+              </li>
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name">
+                    <p>Золотой</p>
+                    <span class="awards__logo-icon">
+                      <img src="img/logo/logo-gold-site.svg" width="46" height="47" alt="номинация - Золотой Сайт" style="--icon-width: 46; --icon-height: 47;">
+                    </span>
+                    <p>Сайт</p>
+                  </div>
+                  <span>40</span>
+                </a>
+              </li>
+              <li class="awards__organizer-item">
+                <a class="awards__organizer-link" href="#">
+                  <div class="awards__organizer-name awards__organizer-name--wow">
+                    <p>WOW</p>
+                    <span class="awards__logo-icon">
+                      <img src="img/logo/logo-wow.svg" width="46" height="24" alt="Логотип номинации - WOW Awards" style="--icon-width: 46; --icon-height: 24;">
+                    </span>
+                    <p>Awards</p>
+                  </div>
+                  <span>2</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="awards__category-progress">
+            <ul class="awards__category-list list-reset">
+              <li class="awards__category-item">
+                <div class="awards__category-card">
+                  <div class="awards__place">
+                    <span>2</span>
+                    <p>Рейтинг Рунета 2024</p>
+                  </div>
+                  <h4>в рейтинге креативности <br>для крупного b2b-бизнеса</h4>
+                </div>
+              </li>
+              <li class="awards__category-item">
+                <div class="awards__category-card">
+                  <div class="awards__place">
+                    <span>2</span>
+                    <p>Рейтинг Рунета 2024</p>
+                  </div>
+                  <h4>в дизайне цифровых продуктов для промышленности</h4>
+                </div>
+              </li>
+              <li class="awards__category-item">
+                <div class="awards__category-card">
+                  <div class="awards__place">
+                    <span>5</span>
+                    <p>Рейтинг Рунета 2024</p>
+                  </div>
+                  <h4>в разработке сайтов <br>для промышленности</h4>
+                </div>
+              </li>
+              <li class="awards__category-item">
+                <div class="awards__category-card awards__category-card--disign">
+                  <div class="awards__place">
+                    <span>13</span>
+                    <p>Tagline 2024</p>
+                  </div>
+                  <h4>в рейтинге <br>веб-дизайна</h4>
+                </div>
+              </li>
+              <li class="awards__category-item">
+                <div class="awards__category-card">
+                  <div class="awards__place">
+                    <span>8</span>
+                    <p>Ruward 2022</p>
+                  </div>
+                  <h4>в рейтинге digital <br>design & creative</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" data-animate="footer">
+    <div class="footer__wrapper">
+      <div class="footer__contacts-wrapper">
+        <div class="footer__social-wrapper">
+          <button class="footer__start-btn button-link" type="button">Начать проект</button>
+          <div class="footer__social social">
+            <ul class="social__list list-reset">
+              <li class="social__item">
+                <a class="social__link link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страница в Behance">be</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страница в Dprofile">dp</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страница в Telegram">tg</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страница в Вконтакте">vk</a>
+              </li>
+            </ul>
+          </div>
+          <span class="footer__copyright">© 2014 - 2024</span>
+        </div>
+        <div class="footer__text-wrapper">
+          <p class="footer__intro">Создаем качественный digital-продукт на базе стратегии,&nbsp;креатива и технологий</p>
+          <div class="footer__contacts contacts">
+            <div class="contacts__links">
+              <ul class="contacts__links-list list-reset">
+                <li class="contacts__link-item">
+                  <a class="contacts__link contacts__link--mail link" href="mailto:hello@only.digital?subject=Вопрос&body=Здравствуйте!">hello@only.digital</a>
+                </li>
+                <li class="contacts__link-item">
+                  <a class="contacts__link contacts__link--tel link" href="tel:+7(495)7409979">+7 (495) 740 99 79</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__telegram">
+              <p class="contacts__title-social text-pointing">Telegram для связи</p>
+              <span class="contacts__icon-tg">
+                <svg width="16" height="16" aria-hidden="true">
+                  <use href="/__spritemap#sprite-telegram"></use>
+                </svg>
+              </span>
+              <a class="contacts__link-tg link" href="https://t.me/onlydigitalagency">@onlydigitalagency</a>
+            </div>
+          </div>
+          <div class="footer__presentation presentation">
+            <ul class="presentation__list list-reset">
+              <li class="presentation__item">
+                <a class="presentation__link presentation__link--pdf link" href="#">pdf</a>
+              </li>
+              <li class="presentation__item">
+                <a class="presentation__link presentation__link--pitch link" href="#">pitch</a>
+              </li>
+            </ul>
+            <p class="presentation__text text-pointing">Презентация<br>компании</p>
+          </div>
+        </div>
+        <a class="footer__logo-link" href="index.html">
+          <img src="img/logo/logo-only-footer.svg" alt="Логотип сайта - Only" width="188" height="30">
+        </a>
+      </div>
+      <div class="footer__privacy-wrapper">
+        <p class="footer__slogan">
+          <span class="footer__slogan-word">creative</span>
+          <span class="footer__slogan-word">digital</span>
+          <span class="footer__slogan-word">production</span>
+        </p>
+        <a class="footer__privacy link" href="#" aria-label="Политика конфиденциальности компании">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>

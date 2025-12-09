@@ -56,6 +56,17 @@ export default {
       cache: true,
       cacheLocation: './.cache',
     }),
+    {
+      name: 'fix-crossorigin',
+      transformIndexHtml(html) {
+        // Исправляем crossorigin без значения на crossorigin="anonymous"
+        return html
+          .replace(
+            /crossorigin(?!\s*=\s*["'])/g,
+            'crossorigin="anonymous"'
+          );
+      }
+    },
   ],
   css: {
     devSourcemap: true

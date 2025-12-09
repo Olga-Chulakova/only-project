@@ -1,0 +1,52 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: size(5px);
+  align-items: center;
+
+  @include vp-1279 {
+    gap: 5px;
+  }
+}
+
+.social__link {
+  font-size: size(16px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.48px;
+  width: size(48px);
+  height: size(48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-default-white;
+  border-radius: size(15px);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  @include vp-1279 {
+    font-size: 13px;
+    letter-spacing: -0.39px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: $color-highlight;
+      transform: scale(1.05);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: size(1.5px) solid transparent;
+  }
+
+  &:focus-visible {
+    outline: size(1.5px) solid $color-text;
+  }
+}

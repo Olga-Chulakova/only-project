@@ -5,6 +5,20 @@ module.exports = {
   ],
   plugins: ["stylelint-selector-bem-pattern"],
   rules: {
+    "no-unknown-custom-properties": null,
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": ["scaling", "size"]
+      }
+    ],
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["function", "return", "mixin", "include", "content", "if", "else", "each", "for"]
+      }
+    ],
     "plugin/selector-bem-pattern": {
       preset: "bem",
       implicitComponents: "blocks/*.scss",

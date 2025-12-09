@@ -1,0 +1,9 @@
+$tt-commons: "TT Commons Pro", "Arial", sans-serif;
+$tt-runs: "TT Runs", "Arial", sans-serif;
+$arial: "Arial", sans-serif;
+
+@include font-face("TT Commons Pro", 500, normal, url("../fonts/tt-commons-pro-medium.woff2") format("woff2"), url("../fonts/tt-commons-pro-medium.woff") format("woff"));
+@include font-face("TT Commons Pro", 400, normal, url("../fonts/tt-commons-pro-regular.woff2") format("woff2"), url("../fonts/tt-commons-pro-regular.woff") format("woff"));
+@include font-face("TT Runs", 700, normal, url("../fonts/tt-runs-bold.woff2") format("woff2"), url("../fonts/tt-runs-bold.woff") format("woff"));
+@include font-face("TT Runs", 600, normal, url("../fonts/tt-runs-demi-bold.woff2") format("woff2"), url("../fonts/tt-runs-demi-bold.woff") format("woff"));
+@include font-face("TT Runs", 500, normal, url("../fonts/tt-runs-medium.woff2") format("woff2"), url("../fonts/tt-runs-medium.woff") format("woff"));

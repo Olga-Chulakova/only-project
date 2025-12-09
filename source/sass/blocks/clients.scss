@@ -1,0 +1,152 @@
+.clients {
+  padding: scaling(130px) 0 0;
+
+  @include vp-1279 {
+    padding: 80px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 32px 0 0;
+  }
+}
+
+.clients__general-wrapper {
+  padding: 0 scaling(30px, 0.5);
+
+  @include vp-1439 {
+    padding: 0 scaling(30px, 6);
+  }
+
+  @include vp-1279 {
+    padding: 0 20px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.clients__subtitle {
+  font-size: size(26px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.78px;
+  text-align: center;
+  width: size(676px);
+  margin: 0 auto size(80px);
+
+  @include vp-1279 {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    width: 500px;
+    margin: 0 auto 58px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.clients__logo-wrapper {
+  padding: 0 scaling(65px, 0.5);
+
+  @include vp-1439 {
+    padding: 0 scaling(65px, 5);
+  }
+
+  @include vp-1279 {
+    padding: 0 scaling(65px, 3.5);
+  }
+
+  @include vp-767 {
+    padding: 0 6px;
+  }
+}
+
+.clients__logo-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  @include vp-1279 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.clients__logo-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    width: size(242px);
+    height: size(242px);
+    background-color: $color-default-white;
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0.4s;
+    z-index: -1;
+
+    @include vp-1279 {
+      content: none;
+    }
+  }
+
+  @include vp-1921 {
+    height: size(180px);
+  }
+
+  @include vp-1279 {
+    height: 150px;
+  }
+
+  @include vp-767 {
+    height: 100px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.clients__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+  img {
+    display: block;
+    width: calc(var(--img-w) / var(--fz-default) * 1rem);
+    height: calc(var(--img-h) / var(--fz-default) * 1rem);
+    object-fit: contain;
+
+    @include vp-1279 {
+      --tablet-scale: 0.88;
+
+      width: calc(var(--img-w) / var(--fz-default) * 1rem * var(--tablet-scale));
+      height: calc(var(--img-h) / var(--fz-default) * 1rem * var(--tablet-scale));
+    }
+
+    @include vp-767 {
+      --mobile-scale: 0.56;
+
+      width: calc(var(--img-w) * var(--mobile-scale) * 1px);
+      height: calc(var(--img-h) * var(--mobile-scale) * 1px);
+    }
+  }
+}
