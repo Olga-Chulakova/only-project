@@ -1,5 +1,6 @@
 .projects {
   padding: scaling(130px) 0 0;
+  overflow: hidden;
 
   @include vp-1279 {
     padding: 80px 0 0;
