@@ -13,7 +13,7 @@
 
 ## 🌐 Живое демо
 
-[![Перейти на сайт](https://img.shields.io/badge/Смотреть_сайт-8957e5?style=for-the-badge&logo=github&logoColor=white)]
+[![Перейти на сайт](https://img.shields.io/badge/Смотреть_сайт-8957e5?style=for-the-badge&logo=github&logoColor=white)](https://olga-chulakova.github.io/only-project/)
 
 ## 🛠 Технологии и инструменты
 
