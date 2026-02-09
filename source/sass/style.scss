@@ -1,4 +1,36 @@
-// Vendor
-// ---------------------------------
+/* VENDOR */
 
 @import "vendor/normalize";
+
+/* GLOBAL */
+
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/functions";
+@import "./global/fonts";
+@import "./global/global";
+@import "./global/visually-hidden";
+
+/* BLOCKS */
+
+@import "./blocks/link";
+@import "./blocks/list-reset";
+@import "./blocks/button-link";
+@import "./blocks/title";
+@import "./blocks/title-h2";
+@import "./blocks/page-body";
+@import "./blocks/header";
+@import "./blocks/nav-menu";
+@import "./blocks/hero";
+@import "./blocks/text-pointing";
+@import "./blocks/contacts";
+@import "./blocks/presentation";
+@import "./blocks/portfolio";
+@import "./blocks/clients";
+@import "./blocks/projects";
+@import "./blocks/project-card";
+@import "./blocks/banner";
+@import "./blocks/awards";
+@import "./blocks/footer";
+@import "./blocks/social";
+@import "./blocks/overlay";

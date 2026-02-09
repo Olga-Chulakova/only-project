@@ -1,0 +1,61 @@
+:root {
+  --fz-default: 16;
+  --vp-base: 1440;
+  --icon-width: initial;
+  --icon-height: initial;
+  --img-w: initial;
+  --img-h: initial;
+  --arrow-image: initial;
+  --heart-image: initial;
+  --house-image: initial;
+  --globe-image: initial;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: $fz-default;
+
+  @include vp-1441 {
+    font-size: scaling($fz-default);
+  }
+
+  @include vp-1439 {
+    font-size: scaling($fz-default);
+  }
+
+  @include vp-1279 {
+    font-size: size($fz-default);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $color-main;
+  font-family: $tt-commons;
+  font-weight: 500;
+  font-style: normal;
+  color: $color-text;
+  min-width: 375px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

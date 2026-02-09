@@ -1,0 +1,136 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: size(40px);
+
+  @include vp-1279 {
+    flex-direction: row;
+    gap: 56px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.contacts a {
+  position: relative;
+  font-family: $tt-commons;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.18px;
+  transition: opacity 0.3s ease, transform 0.3s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $color-text;
+    left: 0;
+    bottom: -1px;
+    transition: opacity 0.3s ease, transform 0.3s;
+
+    @include vp-767 {
+      bottom: 0;
+    }
+  }
+
+  @include vp-1441 {
+    font-size: size(18px);
+  }
+
+  @include vp-1279 {
+    font-size: 15px;
+    letter-spacing: -0.15px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:hover::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: size(1.5px) solid transparent;
+  }
+
+  &:focus-visible {
+    outline: size(1.5px) solid $color-text;
+  }
+}
+
+.contacts__links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+
+  @include vp-1441 {
+    gap: size(5px);
+  }
+
+  @include vp-1279 {
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    gap: 8px;
+  }
+}
+
+.contacts__telegram {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+
+  @include vp-1441 {
+    gap: size(5px);
+  }
+
+  @include vp-1279 {
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.contacts__icon-tg {
+  display: none;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+
+  @include vp-767 {
+    display: block;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contacts__title-social {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}
